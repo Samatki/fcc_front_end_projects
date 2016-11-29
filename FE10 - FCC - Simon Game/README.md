@@ -1,6 +1,10 @@
+# FE08: Simon Game
+
+## FCC Advanced Front End Development 
+
 A Pen created at CodePen.io. You can find this one at http://codepen.io/Satki/pen/ZpwyAv.
 
-## User Stories
+### User Stories
 
 - User Story: I am presented with a random series of button presses.
 

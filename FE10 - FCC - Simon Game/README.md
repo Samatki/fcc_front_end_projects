@@ -1,4 +1,4 @@
-# FE08: Simon Game
+# FE10: Simon Game
 
 ## FCC Advanced Front End Development 
 

@@ -1,6 +1,10 @@
+# FE07: Javascript Calculator
+
+## FCC Advanced Front End Development 
+
 A Pen created at CodePen.io. You can find this one at http://codepen.io/Satki/pen/dpgRYy.
 
-## User Stories
+### User Stories
 
 - User Story: I can add, subtract, multiply and divide two numbers.
 

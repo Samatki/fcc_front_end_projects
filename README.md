@@ -11,7 +11,7 @@
 
  ## Intermediate Front End Development Projects
 
-3. Random Quote Machine (API)
+3. Random Quote Machine (forismatic API)
 
 4. Local Weather Details (openweather API)
 

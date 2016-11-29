@@ -1,6 +1,8 @@
 # fcc_front_end_projects
 - From Front End Section of Free Code Camp Course
 
+- All projects initially created on codepen.io
+
  ## Intermediate Front End Development Projects
 
 1. Tribute Page (Static)

@@ -1,0 +1,106 @@
+
+
+.calcnumber, .calcfunc{
+  font-size: 15px;
+  background-color:lightsteelblue;
+  height:30px;
+  width:40px;
+  text-align:center;
+  padding-top:10px;
+  border: solid 1px black;
+  margin-bottom: 5px;
+  cursor:pointer;
+  display:inline-block;
+  padding-bottom:25px;
+  margin-left:2px;
+  box-shadow: 0 0 5px black;
+}
+
+#numberContainer{
+  padding-top:5px;
+  padding-left:5px;
+  width:140px;
+  background-color:none;
+  -webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+
+/* Rules below not implemented in browsers yet */
+-o-user-select: none;
+user-select: none;
+  display:inline-block;
+}
+
+.calcnumber:hover, .calcfunc:hover{
+  font-weight:bold;
+  border: solid 1px black;
+  box-shadow: 0 0 0 1pt black;
+  height:30px;
+  width:40px;
+  padding-top:10px;
+}
+
+.calcnumber:active, .calcfunc:active{
+  color:blue;
+  box-shadow: 0 0 0 0 black;
+}
+
+#zero{
+  width:85px;
+}
+
+#resultbox{
+  background-color:white;
+  height:40px;
+  width:207px;
+  font-family:'Segment7Standard';
+  font-size:34px;
+  padding: 10px;
+  padding-top:20px;
+  direction: rtl;
+  border: black 3px inset;
+  margin-left:5px;
+  padding-right:18px;
+}
+
+#formbox{
+  background-color:lightblue;
+  height:10px;
+  width:215px;
+  font-family:'Inconsolata', 'arial';
+    padding: 10px;
+      padding-top: 3px;
+  margin-top:10px;
+  margin-left:5px;
+  margin-bottom:10px;
+  border: black 3px inset;
+}
+
+.hoverC{ 
+  color:blue;
+  box-shadow: 0 0 0 1pt black;
+}
+
+#funcTable{
+  background-color:none;
+  width:94px;
+  display:inline-block;
+  padding-top:5px;
+  padding-left:5px;
+}
+
+.calcfunc[value='=']{
+  width:86px;
+}
+
+#calculator{
+  margin-top:50px;
+  margin:100px auto;
+  width:250px;
+  padding: 20px;
+  box-shadow: 0 0 35px black;
+  border-radius: 20px;
+  background-color:lightgrey;
+  padding-top:40px;
+  border: black solid 3px;
+}

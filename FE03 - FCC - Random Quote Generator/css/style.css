@@ -1,0 +1,132 @@
+body{
+overflow-x:hidden;
+font-family: 'Slabo 27px', serif;
+  background-color:lightblue;
+}
+
+#quoteContainer {
+  background-color:white;
+   min-height:150px;
+  padding:10px 0px 10px 0px;
+  width:900px;
+  position:relative;
+  margin:auto;
+  border-radius:20px;
+  margin-top:200px;
+  color:lightblue;
+}
+
+#quoteContainer:hover{
+  border:solid grey 2px;
+  padding-top:8px;
+}
+
+.btn1ZoomIn{
+      -webkit-animation-name: positionerInAnim; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.75s; /* Chrome, Safari, Opera */
+    animation-name: positionerInAnim;
+    animation-duration: 0.75s;
+}
+
+.btn1ZoomOut{
+       -webkit-animation-name: positionerOutAnim; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.75s; /* Chrome, Safari, Opera */
+    animation-name: positionerOutAnim;
+    animation-duration: 0.75s;
+}
+
+#btn3 {
+  background-color:white;
+    height:60px;
+  width:300px;
+  position:absolute;
+  left:50%;
+  transform:translate(-350px,0px); 
+  top:450px;
+  cursor:pointer;
+  border-radius:10px;
+    color:lightblue;
+}
+
+@-webkit-keyframes positionerInAnim{
+      0%  {margin-left:-900px;margin-right:50%; transform:translate(-450px,0);opacity:0}
+     100% {margin-left:50%;margin-right:50%;transform:translate(-450px,0); opacity:1}
+}
+
+@keyframes positionerInAnim{
+      0%  {margin-left:-900px; transform:translate(-450px,0);opacity:0}
+    25%{opacity:0;}
+     100% {margin-left:50%;transform:translate(-450px,0);opacity:1}
+}
+
+
+@keyframes positionerOutAnim{
+        0%  {  margin-right:50%;
+               transform:translate(450px,0); opacity:1;}
+  50%{opacity:0;}
+     100% {    margin-right:-900px;
+               transform:translate(450px,0); }
+}
+
+@-webkit-keyframes positionerOutAnim{
+        0%  {  margin-right:50%;
+               transform:translate(450px,0); opacity:1;}
+    50%{opacity:0;}
+     100% {    margin-right:-900px;
+               transform:translate(450px,0);
+              opacity:0;
+  }
+}
+
+.visibilityB{
+  display:none;
+}
+
+#btn1i{
+  background-color:clear;
+  padding: 20px 30px 5px 30px;
+  text-align: center;  
+}
+
+#qAuthor{
+  text-align:right;
+  font-weight:bold;
+  font-style:italic;
+  font-size:20px;
+}
+
+#qText{
+ font-size: 24px;
+}
+
+#btn4 {
+  background-color:white;
+    height:60px;
+  width:300px;
+  position:absolute;
+  left:50%;
+  transform:translate(50px,0px); 
+  top:450px;
+  cursor:pointer;
+  border-radius: 10px;
+  color:lightblue;
+}
+
+button{
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+  border:none;
+  font-weight:bold;
+}
+
+button:focus{
+  outline:none;
+}
+
+button:hover{
+border:solid grey 2px;
+}
+
+button:active{
+border:solid grey 3px;
+}

@@ -4,7 +4,7 @@ A Pen created at CodePen.io. You can find this one at http://codepen.io/Satki/pe
 
 - User Story: I am presented with a random series of button presses.
 
--User Story: Each time I input a series of button presses correctly, I see the same series of button presses but with an additional step.
+- User Story: Each time I input a series of button presses correctly, I see the same series of button presses but with an additional step.
 
 - User Story: I hear a sound that corresponds to each button both when the series of button presses plays, and when I personally press a button.
 

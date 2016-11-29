@@ -1,6 +1,6 @@
 # FE08: Pomodoro Clock
 
-## FCC Advanced Front End Develoopment 
+## FCC Advanced Front End Development 
 
 A Pen created at CodePen.io. You can find this one at http://codepen.io/Satki/pen/pEGoQd.
 

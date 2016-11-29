@@ -1,6 +1,10 @@
+# FE06: Twitch Streamer Status Checker
+
+## FCC Intermediate Front End Development 
+
 A Pen created at CodePen.io. You can find this one at http://codepen.io/Satki/pen/ZpAQbq.
 
-## User Stories
+### User Stories
 
 
 - User Story: I can see whether Free Code Camp is currently streaming on Twitch.tv.

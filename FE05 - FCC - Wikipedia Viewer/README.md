@@ -1,6 +1,10 @@
+# FE05: Wikipedia Searcher and Viewer
+
+## FCC Intermediate Front End Development 
+
 A Pen created at CodePen.io. You can find this one at http://codepen.io/Satki/pen/XjVvZw.
 
-## User Stories
+### User Stories
 
 - User Story: I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.
 

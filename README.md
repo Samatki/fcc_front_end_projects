@@ -3,7 +3,7 @@
 
 - All projects initially created on codepen.io
 
-- Web hosted versions can be found [here](samatki.github.io/fcc_front_end_projects)
+- Web hosted versions can be found [here](http://samatki.github.io/fcc_front_end_projects)
 
  ## Intermediate Front End Development Projects
 

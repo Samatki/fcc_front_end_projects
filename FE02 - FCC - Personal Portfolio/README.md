@@ -1,4 +1,4 @@
-# FE02: Personal Portfoliio (Static)
+# FE02: Personal Portfolio (Static)
 
 ## FCC Basic Front End Development 
 

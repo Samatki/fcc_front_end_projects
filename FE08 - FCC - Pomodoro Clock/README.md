@@ -1,6 +1,10 @@
+# FE08: Pomodoro Clock
+
+## FCC Advanced Front End Develoopment 
+
 A Pen created at CodePen.io. You can find this one at http://codepen.io/Satki/pen/pEGoQd.
 
-## User Stories
+### User Stories
  
 - User Story: I can start a 25 minute pomodoro, and the timer will go off once 25 minutes has elapsed.
 

@@ -3,7 +3,7 @@
 
 - All projects initially created on codepen.io
 
- ## Intermediate Front End Development Projects
+ ## Basic Front End Development Projects
 
 1. Tribute Page (Static) - [Link](http://samatki.github.io/fcc_front_end_projects/FE01 - FCC - Tribute Page/index.html)
 

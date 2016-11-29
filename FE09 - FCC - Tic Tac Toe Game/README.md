@@ -1,6 +1,6 @@
 A Pen created at CodePen.io. You can find this one at http://codepen.io/Satki/pen/LRaEVo.
 
- ## User Stories
+## User Stories
  
 - User Story: I can play a game of Tic Tac Toe with the computer.
 

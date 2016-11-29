@@ -7,7 +7,7 @@
 
  ## Intermediate Front End Development Projects
 
-1. [Tribute Page (Static)](samatki.github.io/fcc_front_end_projects/FE01 - FCC - Tribute Page/index.html)
+1. [Tribute Page (Static)](http://samatki.github.io/fcc_front_end_projects/FE01 - FCC - Tribute Page/index.html)
 
 2. Personal Portfolio Webpage (Static, no Javascript)
 

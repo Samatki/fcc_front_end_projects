@@ -7,6 +7,10 @@ body {
 
 }
 
+.container-fluid{
+width: 1200px;
+}
+
 a:link {
  color:white; 
 }

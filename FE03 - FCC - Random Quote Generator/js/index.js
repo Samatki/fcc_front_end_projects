@@ -12,7 +12,7 @@ function getNewQuote(textColor) {
 var z = "";
   var x = Math.floor(Math.random()*10000);
 	//https://crossorigin.me/
-    var k = "https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&key="+x+"&format=jsonp&lang=en";
+    var k = "https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&key="+x+"&format=json&lang=en";
     $.ajax({
     type:'GET',	    
     url:k,    

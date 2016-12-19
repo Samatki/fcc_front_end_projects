@@ -11,11 +11,9 @@ $(document).ready(function(){
 function getNewQuote(textColor) {
 var z = "";
   var x = Math.floor(Math.random()*10000);
-	//https://crossorigin.me/
-    var k = "http://api.forismatic.com/api/1.0/?method=getQuote&key="+x+"&format=jsonp&lang=en";
+    var k = "https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&key="+x+"&format=json&lang=en";
     $.ajax({
-    url:k,
-dataType:'jsonp',	    
+    url:k,    
     success: function(zar){
       if (zar.quoteAuthor == ''){
       $('#btn1i').html("<p id=\"qText\" style=\"color:"+textColor+"\">"+zar.quoteText+"</p><p id=\"qAuthor\" style=\"color:"+textColor+"\"> --- Unknown</p>");

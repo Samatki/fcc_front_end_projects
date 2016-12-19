@@ -15,6 +15,7 @@ var z = "";
     var k = "http://api.forismatic.com/api/1.0/?method=getQuote&key="+x+"&format=jsonp&lang=en";
     $.ajax({
     url:k,
+dataType:'jsonp',	    
     success: function(zar){
       if (zar.quoteAuthor == ''){
       $('#btn1i').html("<p id=\"qText\" style=\"color:"+textColor+"\">"+zar.quoteText+"</p><p id=\"qAuthor\" style=\"color:"+textColor+"\"> --- Unknown</p>");

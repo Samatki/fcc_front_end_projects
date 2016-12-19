@@ -13,6 +13,7 @@ var z = "";
   var x = Math.floor(Math.random()*10000);
     var k = "https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&key="+x+"&format=json&lang=en";
     $.ajax({
+    dataType:'jsonp',
     url:k,
     success: function(zar){
       if (zar.quoteAuthor == ''){

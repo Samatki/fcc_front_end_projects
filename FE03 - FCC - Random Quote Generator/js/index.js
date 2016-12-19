@@ -11,7 +11,8 @@ $(document).ready(function(){
 function getNewQuote(textColor) {
 var z = "";
   var x = Math.floor(Math.random()*10000);
-    var k = "https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&key="+x+"&format=jsonp&lang=en";
+	//https://crossorigin.me/
+    var k = "http://api.forismatic.com/api/1.0/?method=getQuote&key="+x+"&format=jsonp&lang=en";
     $.ajax({
     url:k,    
     success: function(zar){

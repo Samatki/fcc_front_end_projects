@@ -14,6 +14,7 @@ var z = "";
 	//https://crossorigin.me/
     var k = "http://api.forismatic.com/api/1.0/?method=getQuote&key="+x+"&format=jsonp&lang=en";
     $.ajax({
+    dataType:'GET',	    
     url:k,    
     success: function(zar){
       if (zar.quoteAuthor == ''){

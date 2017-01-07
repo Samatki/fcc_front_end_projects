@@ -1,6 +1,6 @@
 $('#weatherCircle').css('display','none');
 $(document).ready(function(){
-
+  
   function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -166,22 +166,60 @@ if (navigator.geolocation) {
   console.log(currentLong);
     weatherUrl = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+currentLat+"&lon="+currentLong +"&APPID=9d8e2673db802ae0bad8d0ae1e72e011";
 console.log(weatherUrl);
-  $.ajax({
-    type:"GET",
-  url : weatherUrl, 
-           dataType : "jsonp",
-   success: function(wD){
-     if(wD.cod == 404){
+    
+            var x = false;
+            x = new XMLHttpRequest();
+
+            x.open('GET', weatherUrl, true);
+            x.setRequestHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Origin");
+            x.setRequestHeader("Access-Control-Allow-Headers", "X-Requested-With");
+            x.setRequestHeader("Access-Control-Allow-Origin", "*");
+            x.setRequestHeader("X-Requested-With", "*");
+            x.onreadystatechange = function() {
+                if (x.readyState === 4) {
+                  console.log(x.responseText)
+                  var wD = JSON.parse(x.responseText); 
+                  console.log(wD.cod)
+     if(wD.cod != 200){
       console.log('OpenWeather Server playing up again'); $('#locationTimeData').html('<p>Woops! Look like something went wrong, please try again Later!</p>');
        $('#weatherCircle').css('display','none');
      }else{
-              $('#weatherCircle').css('display','');
+              $('#weatherCircle').css('display','block');
+  $('#locationTimeData').html('<p>'+wD.name+', '+wD.sys.country+'</p>');
+$('#Inner').html('<p id="wCText">'+wD.weather[0].description+'<br><br>' +'<span id="Temp">'+(parseFloat(wD.main.temp)-273.15).toFixed(1)+'</span>'+'<span id="tempToggler"> &deg;C</span></p>');
+   pictureStyler(wD.weather[0].id);
+     }
+                }
+            };
+            x.send();
+        
+   
+  /*  
+  $.ajax({
+       crossDomain:true,
+    type:"GET",
+  url : weatherUrl, 
+    
+    
+         beforeSend: function(x){x.setRequestHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Origin");
+            x.setRequestHeader("Access-Control-Allow-Headers", "X-Requested-With");
+            x.setRequestHeader("Access-Control-Allow-Origin", "*");
+            x.setRequestHeader("X-Requested-With", "*");},
+           dataType : "jsonp",
+   success: function(wD){
+     if(wD.cod != 200){
+      console.log('OpenWeather Server playing up again'); $('#locationTimeData').html('<p>Woops! Look like something went wrong, please try again Later!</p>');
+       $('#weatherCircle').css('display','none');
+     }else{
+              $('#weatherCircle').css('display','block');
   $('#locationTimeData').html('<p>'+wD.name+', '+wD.sys.country+'</p>');
 $('#Inner').html('<p id="wCText">'+wD.weather[0].description+'<br><br>' +'<span id="Temp">'+(parseFloat(wD.main.temp)-273.15).toFixed(1)+'</span>'+'<span id="tempToggler"> &deg;C</span></p>');
    pictureStyler(wD.weather[0].id);
      }
    }
-  })
+  }) */
+    
+    
   });
 }
 }

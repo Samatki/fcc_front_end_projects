@@ -164,7 +164,7 @@ if (navigator.geolocation) {
     currentLong = position.coords.longitude;
   console.log(currentLat);
   console.log(currentLong);
-    weatherUrl = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat="+currentLat+"&lon="+currentLong +"&APPID=9d8e2673db802ae0bad8d0ae1e72e011";
+    weatherUrl = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+currentLat+"&lon="+currentLong +"&APPID=9d8e2673db802ae0bad8d0ae1e72e011";
 console.log(weatherUrl);
   $.ajax({
     type:"GET",
